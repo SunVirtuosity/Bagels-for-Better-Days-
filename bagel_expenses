@@ -1,1 +1,32 @@
 
+# This is a prototype for the Bagels for Better Days prototype 
+# This program tracks expenses for bagels including the customer's name, the type of bagel and
+# the cost of said bagel.
+# This program also tracks who has not paid for their bagel and who paid for their bagel
+
+# Imports here
+from typing import Final # Imports the immutability for variables
+
+# Initialize variables here
+f_name = '' # First name
+l_name = '' # Last name
+bagel_type = ''
+cost_of_product = 0.00 # Cost of product
+people = [] # List of people who ordered bagels
+hasPaid = False # People who have paid for their bagel(or not)
+is_valid_input = False # Boolean flag
+TEMP_PASSCODE: Final[str] = "MClair29" # This variable CANNOT be changed.
+
+canRun = False
+# Prompt prototype for a welcome message
+while True:
+    print("Welcome to the Bagels for Better Days Prototype(This is strictly used for Michael Diaz to order bagels for instructors and lifeguards)")
+    passcode_input = str(("Please enter the password for this website(Password is CASE SENSITIVE): "))
+
+    # Condition for the program to start running
+    if passcode_input = TEMP_PASSCODE:
+        canRun = True
+    if canRun:
+        break
+    else:
+        print("Invalid password")
