@@ -1,5 +1,6 @@
 
-# This is a prototype for the Bagels for Better Days prototype 
+
+# This is a prototype for the Bagels for Better Days prototype
 # This program tracks expenses for bagels including the customer's name, the type of bagel and
 # the cost of said bagel.
 # This program also tracks who has not paid for their bagel and who paid for their bagel
@@ -17,16 +18,21 @@ hasPaid = False # People who have paid for their bagel(or not)
 is_valid_input = False # Boolean flag
 TEMP_PASSCODE: Final[str] = "MClair29" # This variable CANNOT be changed.
 
-canRun = False
+canRun = False # Boolean flag to see if the program canRun
 # Prompt prototype for a welcome message
+print("Welcome to the Bagels for Better Days Prototype(This is strictly used for Michael Diaz to order bagels for instructors and lifeguards)")
+# Program will only run if the passcode is valid('MClair29')
 while True:
-    print("Welcome to the Bagels for Better Days Prototype(This is strictly used for Michael Diaz to order bagels for instructors and lifeguards)")
-    passcode_input = str(("Please enter the password for this website(Password is CASE SENSITIVE): "))
-
-    # Condition for the program to start running
-    if passcode_input = TEMP_PASSCODE:
+    # Prompt user to input TEMP_PASSCODE: MClair29
+    passcode_input = str(input("Please enter the passcode(CASE-SENSITIVE):"))
+    if passcode_input == TEMP_PASSCODE:
         canRun = True
     if canRun:
         break
     else:
-        print("Invalid password")
+        print("Please enter a valid passcode")
+
+# TODO: Put all of the logic for bagel expenses in a function
+# Prompt user to enter amount of customers
+amnt_of_customers = int(input("Enter the amount of customers: "))
+
